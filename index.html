@@ -24,7 +24,15 @@ p {
   background-color: yellow;
 }
       
+.img1 {
+  float: right;
+}
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 <head>
     <title>Vincent</title>
@@ -38,7 +46,18 @@ p {
 <p class="p3">Vincent has chosen, shown in the Lucida Console font.</p>
     
     <h2>A RED Car</h2>
-   <img src="IMG_0111.JPG" alt="A red Car" width="400" height="300">
    
+
+<p style="clear:right">Add the clearfix hack to the containing element, to fix this problem:</p>
+
+<div class="clearfix">
+  <h2>With Clearfix</h2>
+  <img class="img1" src="IMG_0111.JPG" alt="Red Car" width="170" height="170">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+</div>
+
+</body>
+</html>
+    
 </body>
 </html>
