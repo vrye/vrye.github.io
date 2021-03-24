@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  overflow: hidden;
+  border: solid
+}
+li {
+  float: left;
+}
 
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 50px;
+font-family: "Times New Roman", Times, serif;
+p {
+  background-color: yellow;
+}
+      
+.img1 {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<head>
+    <title>Animals</title>
+</head>
+<body>
+    
+    <h1 class="center"> ANIMALS </h1>
+    
+    <ul>
+  <li><a href="#index">Home</a></li>
+  <li><a href="#news">Animals</a></li>
+  <li><a href="#contact">Waterfalls</a></li>
+  <li><a href="#about">Contact</a></li>
+</ul>
+
+
+</body>
+</html>
