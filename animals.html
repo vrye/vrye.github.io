@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 ul {
   list-style-type: none;
   margin: 10;
@@ -26,16 +41,9 @@ li a {
   padding: 50px;
 font-family: "Times New Roman", Times, serif;
      text-align: center;
+    }
     
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-  box-sizing: border-box;
-}
-
-    
 </style>
 <head>
     <title>Animals</title>
@@ -54,16 +62,16 @@ font-family: "Times New Roman", Times, serif;
 <h2>Animals in Zambia</h2>
 <p>Enjoy the best safari</p>
     
- <div class="row">
-  <div class="column">
-    <img src="Lion sleeping.jpg" alt="Lion sleeping" style="width:10%">
+ <div class="clearfix">
+  <div class="img-container">
+    <img src="Lion sleeping.jpg" alt="Lion sleeping" style="width:100%">
       <p> Sleeping Lion </p>
   </div>
-  <div class="column">
-    <img src="Zebras.jpeg" alt="zebra" style="width:10%">
+ <div class="img-container">
+    <img src="Zebras.jpeg" alt="zebra" style="width:100%">
   </div>
-  <div class="column">
-    <img src="Elephants.jfif" alt="Elephant" style="width:10%">
+   <div class="img-container">
+    <img src="Elephants.jfif" alt="Elephant" style="width:100%">
   </div>
 </div>
     
