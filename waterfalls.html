@@ -2,6 +2,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
+        * {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+        
 ul {
   list-style-type: none;
   margin: 10;
@@ -46,7 +62,7 @@ p {
 </head>
 <body>
     
-    <h1 class="center"> Waterfalls </h1>
+    <h1 class="center"> WATERFALLS </h1>
     
     <ul>
   <li><a href="index.html">Home</a></li>
@@ -55,6 +71,19 @@ p {
   <li><a href="contact.html">Contact</a></li>
 </ul>
 
+    <div class="clearfix">
+  <div class="img-container">
+    <img src="kalambo-falls.jpg" alt="kalambo-falls" style="width:100%">
+      <p> Sleeping Lion </p>
+  </div>
+ <div class="img-container">
+    <img src="victoria_falls-sunset.jpg" alt="victoria_falls-sunset" style="width:100%">
+  </div>
+   <div class="img-container">
+    <img src="victoria_falls.jpg" alt="victoria_falls" style="width:100%">
+  </div>
+</div>
+    
 
 </body>
 </html>
