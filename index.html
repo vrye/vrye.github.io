@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-body  {
-  background-image: url("");
-    
+
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 ul {
   list-style-type: none;
   margin: 10;
@@ -18,8 +31,8 @@ li {
 
 li a {
   display: block;
-  padding: 8px;
-  background-color: #dddddd;
+  padding: 15px;
+ 
 }
 
 .center {
@@ -28,22 +41,27 @@ li a {
   border: 3px solid #73AD21;
   padding: 50px;
 font-family: "Times New Roman", Times, serif;
-    text-align: center;
+     text-align: center;
     background-image: url("victoria_falls.jpg");
+    }
+    
+
+     
 </style>
 <head>
-    <title>Home</title>
+    <title> ZAMBIA </title>
 </head>
 <body>
     
-    <h1 class="center"> ZAMBIA </h1>
+    <h1 class="center"> Tour Packages </h1>
     
-    <center><ul> 
+    <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="animals.html">Animals</a></li>
   <li><a href="waterfalls.html">Waterfalls</a></li>
   <li><a href="tourpackages.html">Tour Packages</a></li>
   <li><a href="contact.html">Contact</a></li>
+</ul>
   
         
 </center></ul>
