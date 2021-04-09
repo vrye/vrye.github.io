@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
+var myWindow;
+
+function openWin() {
+  myWindow = window.open("", "myWindow", "width=200,height=100");
+  myWindow.document.write("<p>This is 'myWindow'</p>");
+}
+
+function closeWin() {
+  myWindow.close();
+}
 ul {
   list-style-type: none;
   margin: 10;
@@ -28,20 +38,8 @@ font-family: "Times New Roman", Times, serif;
     text-align: center;
     background-image: url("victoria_falls.jpg");
 }
-    
 
-var myWindow;
-
-function openWin() {
-  myWindow = window.open("https://www.google.com", "_blank", "width=500, height=500");
-}
-
-function closeWin() {
-  myWindow.close();
-}
-
-
-</style>
+    </style>
 <head>
     <title>Contact</title>
 </head>
