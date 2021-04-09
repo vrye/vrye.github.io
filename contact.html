@@ -29,6 +29,19 @@ font-family: "Times New Roman", Times, serif;
     background-image: url("victoria_falls.jpg");
 }
       
+<button onclick="openWin()">Open w3schools.com in a new window</button>
+<button onclick="closeWin()">Close the new window (w3schools.com)</button>
+
+var myWindow;
+
+function openWin() {
+  myWindow = window.open("https://www.google.com", "_blank", "width=500, height=500");
+}
+
+function closeWin() {
+  myWindow.close();
+}
+
 
 </style>
 <head>
